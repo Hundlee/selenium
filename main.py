@@ -19,3 +19,8 @@ input_element.send_keys("Avião video" + Keys.ENTER)
 
 link = driver.find_element(By.PARTIAL_LINK_TEXT, 'Avião')
 link.click()
+
+time.sleep(10)
+
+driver.quit()
+
