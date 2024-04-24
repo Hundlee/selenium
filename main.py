@@ -16,3 +16,6 @@ WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CLASS_NAME, 'g
 input_element = driver.find_element(By.CLASS_NAME, 'gLFyf')
 input_element.clear()
 input_element.send_keys("Avião video" + Keys.ENTER)
+
+link = driver.find_element(By.PARTIAL_LINK_TEXT, 'Avião')
+link.click()
